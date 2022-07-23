@@ -54,3 +54,16 @@ app.get("/delete-cookie", (req, res) => {
   res.send("cookie cleared");
 });
 ```
+#### JWT
+* Sign token
+```
+const token = jwt.sign({id}, 'secret_key', {
+  expiresIn: '1h'
+})
+```
+* Verify token
+```
+jwt.verify(token, 'secret_key', async (err, payload) => {
+  if(err) {...} else {next()}
+})
+```
