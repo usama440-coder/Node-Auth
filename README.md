@@ -39,7 +39,7 @@ app.listen(3000, () => console.log(`Server is Listening on port ${3000}`));
     httpOnly: true,
   });
   res.send("Cookie set");
-});
+  });
   ```  
 * Get cookie
 ```
